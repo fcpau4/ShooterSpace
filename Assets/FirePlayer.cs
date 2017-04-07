@@ -12,15 +12,18 @@ public class FirePlayer : MonoBehaviour {
 	}
 	
 	void Update(){
-		
+
 		if(Input.GetKeyDown(KeyCode.Space)){
 			GameObject g = (GameObject) Instantiate(bullet,
 				transform.position,
 				Quaternion.identity);
 
-			Physics2D.IgnoreCollision(g.GetComponent<Collider2D>(),
-				transform.parent.GetComponent<Collider2D>());
-
+			GameObject player = GameObject.Find("PlayerShip");
+			if(!player){
+			Physics2D.IgnoreCollision(g.GetComponent<Collider2D>(), 
+				player.GetComponent<Collider2D>());
+			}
+					
 		}
 
 	}

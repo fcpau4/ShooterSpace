@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Border.cs" />
      <Compile Include="Assets\BulletDamage.cs" />
+     <Compile Include="Assets\BulletDamageAsteroid.cs" />
      <Compile Include="Assets\ContinuousVelocity.cs" />
      <Compile Include="Assets\FireEnemy.cs" />
      <Compile Include="Assets\FirePlayer.cs" />
